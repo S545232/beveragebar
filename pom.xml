@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.1</version>
+        <version>2.6.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -20,10 +20,10 @@
     <packaging>jar</packaging>
     <name>beveragebar</name>
     <description>Make a Web app with Spring Boot (started with Spring Initialzr)</description>
-    <url>https://zooweb.herokuapp.com/</url>
+    <url>https://beveragebar.herokuapp.com/</url>
 
     <properties>
-        <start-class>edu.banditutorials.beveragebar.ZooWebApp</start-class>
+        <start-class>edu.banditutorials.beveragebar.AppWeb</start-class>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -117,7 +117,7 @@
                 <executions>
                     <execution>
                         <configuration>
-                            <mainClass>edu.banditutorials.beveragebar.ZooWebApp</mainClass>
+                            <mainClass>edu.banditutorials.beveragebar.AppWeb</mainClass>
                         </configuration>
                     </execution>
                 </executions>
