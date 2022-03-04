@@ -16,22 +16,22 @@ import static org.junit.Assert.*;
  * @author Anil Kumar Kolla(S545232@nwmissouri.edu)
  */
 public class TeaTest {
-    
+
     public TeaTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -41,13 +41,11 @@ public class TeaTest {
      */
     @Test
     public void testGetDescription() {
-        System.out.println("getDescription");
-        Tea instance = null;
-        String expResult = "";
-        String result = instance.getDescription();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+//        String expected = "a delicious cup of coffee, served hot.";
+        boolean expected = true;
+        Coffee coffee = new Coffee("Coffee");
+        boolean actual = coffee.getDescription().contains("coffee");
+        assertEquals(actual, expected);
     }
-    
+
 }
